@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <title>assignment-6</title>
   </head>
-  <body class="container bg-secondary">
+  <body class="container bg-secondary container">
+    <h1 class="text-center text-light">Mobile Dokan.com</h1>
     <section>
-      <div class="input-group mx-auto w-50 mt-5 ">
+      <div class="input-group mx-auto w-50 mt-5">
         <input
           type="text"
-          class="form-control"
+          class="form-control "
+          id="phone-name"
           placeholder="search your phone "
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
@@ -25,13 +27,53 @@
           class="btn btn-outline-secondary btn-light mx-3"
           type="button"
           id="button-addon2"
+          onclick="loadPhone()"
         >
           search
         </button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nobis corporis quo tempore beatae doloremque adipisci, esse voluptatum? Repellendus beatae fuga, repellat libero laboriosam modi dolores quasi sint in harum sunt? Quasi, tempore? Harum quam fugit consequuntur repellendus ea natus eos praesentium nam nesciunt aliquid vel, rem exercitationem odio recusandae omnis debitis beatae dignissimos hic. Animi a officiis dicta, minus corrupti commodi laudantium reprehenderit doloremque molestias earum ea reiciendis pariatur. Doloribus velit reprehenderit ipsa ex assumenda cum architecto. Rem libero quibusdam iure earum tenetur quis qui ipsa. Facilis, rem quas! Delectus asperiores ducimus expedita culpa autem quas non voluptatibus totam?</p>
       </div>
     </section>
-   
+    <section class="m-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
