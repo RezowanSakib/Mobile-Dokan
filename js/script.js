@@ -1,6 +1,7 @@
 const getName = () => {
   let inputPhone = document.getElementById("phone-name");
   const emptySearch = document.getElementById("empty");
+  emptySearch.classList.add('text-center')
   if (inputPhone.value === "") {
     emptySearch.innerHTML = `<h2>Please input a phone name</h2>`;
   } else {
@@ -58,7 +59,22 @@ const displayPhoneDetail = (phone) => {
       <h5 class="card-title">${
         phone?.releaseDate || "Release date not found"
       }</h5>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h3>Main Features:</h3>
+      <h6>Storage : ${phone.mainFeatures.storage}</h6>
+      <h6>Display Size : ${phone.mainFeatures.displaySize}</h6>
+      <h6>ChipSet : ${phone.mainFeatures.chipSet}</h6>
+      <h6>Memory : ${phone.mainFeatures.memory}</h6>
+      <h4>Sensors:${phone.mainFeatures.sensors[0]} , ${
+    phone.mainFeatures.sensors[1]
+  } ,${phone.mainFeatures.sensors[2]} , ${phone.mainFeatures.sensors[3]} ,${
+    phone.mainFeatures.sensors[4]
+  } ,${phone.mainFeatures.sensors[5]}.</h4>
+  <h4>Others: </h4>
+  <h6>WLAN : ${phone.others.WLAN}</h6>
+  <h6>Bluetooth : ${phone.others.Bluetooth}</h6>
+  <h6>GPS : ${phone.others.GPS}</h6>
+  <h6>Radio : ${phone.others.Radio}</h6>
+  <h6>USB : ${phone.others.USB}</h6>
     </div>
   </div>
 </div>
