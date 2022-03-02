@@ -19,18 +19,19 @@ const displayPhone = (phones) => {
   const searchResult = document.getElementById("result");
   searchResult.innerHTML = ``;
   phones.forEach((phone) => {
+    
     const div = document.createElement("div");
     div.classList.add("col");
     div.innerHTML = `<div class="col">
-   <div class="card h-100">
-     <img src="${phone.image}" class="card-img-top" alt="..." />
+   <div class="card rounded h-100">
+     <img src="${phone.image}" class="card-img-top img-fluid p-5" alt="..." />
      <div class="card-body">
        <h5 class="card-title">${phone.phone_name}</h5>
        <p class="card-text">
          ${phone.brand}.
        </p>
      </div>
-     <button onclick="loadPhoneDetail('${phone.slug}')" class="w-25 mx-auto">Details</button>
+     <button onclick="loadPhoneDetail('${phone.slug}')" class="w-25 mx-auto rounded my-4 btn-secondary">Details</button>
    </div>
  </div>`;
     searchResult.appendChild(div);
@@ -49,9 +50,9 @@ const displayPhoneDetail = (phone) => {
   const div = document.createElement("div");
   div.classList.add("card");
   div.innerHTML = `
-  <div class="row g-0">
-  <div class="col-md-4">
-    <img src="${phone.image}" class="img-fluid rounded-start" alt="...">
+  <div class="row p-3">
+  <div class="col-lg-4">
+    <img src="${phone.image}" class="img-fluid rounded-start mx-auto" alt="...">
   </div>
   <div class="col-md-8">
     <div class="card-body">
